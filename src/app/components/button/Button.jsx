@@ -1,10 +1,12 @@
 import style from "./Button.module.css";
 
 
-export const Button = () => {
+export const Button = ({children, styles}) => {
   return (
-    <button className={style.button}>
-      Contáctanos
+    <button className={style.button}
+      style={styles}
+    >
+      {children}
    </button>
   )
 }

@@ -53,6 +53,15 @@
    bottom:-4px;
 }
 
+.cardsContainer{
+   margin-bottom: 16px;
+}
+
 .cardsContainer > :not(:last-child) {
    margin-bottom: 16px;
+}
+
+.buttonCentered{
+   margin: 0 auto;
+   border: 2px solid black;
 }

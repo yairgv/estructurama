@@ -3,6 +3,7 @@
 import styles from "./page.module.css";
 import { Button } from "./components/button/Button";
 import { Card } from "./components/card/Card";
+import { Footer } from "./components/footer/Footer";
 
 export default function Home() {
 
@@ -22,7 +23,7 @@ const info = {
         <div className={`${styles.headerContent} contentWrapper`}>
           <h1 className={styles.headerTitle}>Construyendo Sueños Arquitectura que Inspira</h1>
           <p className={styles.headerDesc}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar, sapien ut fermentum luctus, ipsum nisl tincidunt libero, quis sollicitudin mauris orci vitae eros.</p>
-          <Button></Button>
+          <Button>Contáctanos</Button>
         </div>
       </header>
       <section className="contentWrapper">
@@ -32,7 +33,7 @@ const info = {
           <Card {...info}/>
           <Card {...info}/>
         </div>
-        <button>boton</button>
+        <Button styles={{margin: "0 auto"}}>Ver más proyectos</Button>
       </section>
     </>
   )

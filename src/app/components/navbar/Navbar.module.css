@@ -9,6 +9,7 @@
 .navbarContent{
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 
 .linksContainer{
