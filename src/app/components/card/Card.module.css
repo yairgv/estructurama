@@ -1,0 +1,65 @@
+.card{
+   display: grid;
+   grid-template-columns: 1fr 356px;
+   gap: 16px;
+}
+
+.card:nth-child(even){
+   grid-template-columns: 356px 1fr;
+}
+
+.card:nth-child(even)> .cardImg{
+   order: 2;
+}
+
+.cardImg{
+   object-fit: cover;
+   width: 100%;
+}
+
+
+.cardInfo{
+   background-color: #202020;
+   color: white;
+   padding: 32px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.cardInfoTitle{
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.cardInfoLocation{
+   font-size: 16px;
+   color: #E0E0E0;
+}
+
+.cardInfoIcon{
+   transform: translateY(2px);
+}
+
+.cardInfoDesc{
+   font-size: 18px;
+   text-wrap: pretty;
+   color: #E0E0E0;
+}
+
+.cardInfoButton{
+   margin-top: auto;  
+   background-color: #232323;
+   border: 1px solid #979797;
+   color: white;
+   padding: 16px;
+   font-size: 20px;
+
+   transition: all;
+   transition-duration: 300ms;
+}
+
+.cardInfoButton:hover{
+   background-color: #202020;
+}
+

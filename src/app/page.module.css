@@ -1,5 +1,4 @@
 .header{
-   padding: 32px;
    max-width: 100vw;
    height: 70vh;
    min-height: calc(100vh - 90px);
@@ -15,8 +14,6 @@
 }
 
 .headerContent{
-   margin: 0 auto;
-   max-width: 1280px;
    width: 100%;
    display: flex;
    flex-direction: column;
@@ -36,4 +33,26 @@
    max-width: 580px;
    text-wrap: pretty;
    line-height: 1.6;
+}
+
+.sectionTitle{
+   margin-bottom: 32px;
+   position: relative;
+   font-size: 32px;
+   font-weight: bold;
+   display: inline-block;
+   color: #596478;
+}
+
+.sectionTitle::before{
+   background-color: #596478;
+   content: "";
+   height: 5px;
+   width: 33%;
+   position: absolute;
+   bottom:-4px;
+}
+
+.cardsContainer > :not(:last-child) {
+   margin-bottom: 16px;
 }

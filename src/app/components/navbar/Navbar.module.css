@@ -1,5 +1,4 @@
 .navbar{
-   padding: 32px;
    background-color: #202020;
    /* backdrop-filter: blur(1px); */
    /* border-bottom: 2px solid #202020; */
@@ -8,9 +7,7 @@
 }
 
 .navbarContent{
-   margin: 0 auto;
    display: flex;
-   max-width: 1280px;
    justify-content: space-between;
 }
 

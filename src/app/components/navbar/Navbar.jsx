@@ -1,10 +1,11 @@
 import React from 'react'
 import style from "./Navbar.module.css";
 
+
 export const Navbar = () => {
   return (
     <nav className={ style.navbar }>
-      <div className={style.navbarContent}>
+      <div className={`${style.navbarContent} contentWrapper`}>
          <div>Estructurama</div>
          <ul className={ style.linksContainer}>
             <li>PROYECTOS</li>
