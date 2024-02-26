@@ -7,7 +7,7 @@
    display: block;
    border: none;
    cursor: pointer;
-
+   font-family: inherit;
    transition: all;
    transition-duration: 300ms;
 }
@@ -18,7 +18,7 @@
 }
 
 .button:active{
-   transform: translateY(4px);
+   transform: translateY(1px);
    background-color: hsl(220, 52%, 44%);
 }
 

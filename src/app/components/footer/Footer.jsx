@@ -1,5 +1,6 @@
 import { Links } from "../links/Links";
 import { Logo } from "../logo/Logo";
+import { Redes } from "../rrss/Redes";
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
@@ -8,7 +9,7 @@ export const Footer = () => {
       <div className={`${styles.footerInfo} contentWrapper`}>
         <Logo />
         <Links />
-        <div className={styles.socialMedia}>Redes</div>
+        <div className={styles.socialMedia}><Redes/></div>
       </div>
     </footer>
   );

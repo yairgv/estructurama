@@ -1,16 +1,18 @@
 import Image from "next/image"
 import styles from "./Logo.module.css";
+import Link from "next/link";
 
 export const Logo = () => {
   return (
-    <div className={styles.logo}>
+    
+    <Link href="/" className={styles.logo}>
       <Image
-         src={"/assets/images/logo.png"}
+         src={"/assets/images/logo_white.webp"}
          width={32}
          height={32}
          alt="Estructurama logo"
       />
       Estructurama
-   </div>
+   </Link>
   )
 }

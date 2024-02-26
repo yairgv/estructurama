@@ -2,3 +2,73 @@
    display: flex;
    gap: 12px;
 }
+
+.link{
+   transition: all;
+   transition-duration: 300ms;
+}
+
+.link:hover{
+   color: rgb(177, 177, 177);
+}
+
+.menuButton{
+   display: none;
+}
+
+
+.drawer{
+   position: fixed;
+   top: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.896);
+   width: 60vw;
+   height: 100vh;
+   z-index: 10;
+   transition: all 300ms;
+
+   transform: translateX(100%);
+}
+
+.drawerVisible{
+   display: block;
+   transform: translateX(0);
+}
+
+.backDrop{
+   visibility: hidden;
+   z-index: 9;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100vh;
+   width: 100vw;
+   background-color: rgba(0, 0, 0, 0);
+   
+   transition: all 300ms;
+}
+
+.backDropVisible{
+   visibility: visible;
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+@media(max-width: 800px){
+   .linksContainer{
+      display: none;
+   }
+
+   .menuButton{
+      font-size: 1.3rem;
+      display: flex;
+      border: 1px solid white;
+      padding: 10px;
+      color: white;
+      background-color: transparent;
+      border-radius: 4px;
+      cursor: pointer;
+   }
+}

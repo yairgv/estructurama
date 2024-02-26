@@ -30,6 +30,7 @@
 2. agregué el upstream para enlazar el fork a tu repo -> git remote add upstream https: //github.com/yairgv/estructurama.git
 3. falta hacer el commit
 4. falta hacer el pull request
+5.
 
 Observaciones:
 * los hijos de footerInfo eran flex, por lo tanto, ocupaban todo el espacio disponible y no quedaba espacio para el justify-self

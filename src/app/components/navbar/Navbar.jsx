@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <nav className={ style.navbar }>
       <div className={`${style.navbarContent} contentWrapper`}>
-         <Logo></Logo>
+         <Logo/>
          <Links/>
       </div>
    </nav>

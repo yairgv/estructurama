@@ -3,7 +3,13 @@
    height: 70vh;
    min-height: calc(100vh - 90px);
    background-position: top;
-   background-image: url("/assets/images/banner.webp");
+   /* background-image: url("/assets/images/banner.webp"); */
+   background-image: linear-gradient(
+      to left,
+      rgba(115, 115, 108, 0.5),
+      rgba(0, 0, 0, 0.945)
+    ), url("/assets/pro_images/v_gr03.jpg");
+
    background-repeat: no-repeat;
    background-size: cover;
    color: white;
@@ -35,23 +41,6 @@
    line-height: 1.6;
 }
 
-.sectionTitle{
-   margin-bottom: 32px;
-   position: relative;
-   font-size: 32px;
-   font-weight: bold;
-   display: inline-block;
-   color: #596478;
-}
-
-.sectionTitle::before{
-   background-color: #596478;
-   content: "";
-   height: 5px;
-   width: 33%;
-   position: absolute;
-   bottom:-4px;
-}
 
 .cardsContainer{
    margin-bottom: 16px;
