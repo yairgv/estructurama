@@ -1,0 +1,39 @@
+.footer{
+   background-color: #202020;
+   color: white;
+
+}
+
+.footerInfo{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footerInfo > * {
+   flex-grow: 1;
+   flex-basis: 0;
+}
+
+.footerInfo > :nth-child(2){
+   justify-content: center;
+}
+
+.socialMedia {
+   display: flex;
+   justify-content: flex-end;
+}
+
+/*
+
+1. hice un fork de tu repo
+2. agregué el upstream para enlazar el fork a tu repo -> git remote add upstream https: //github.com/yairgv/estructurama.git
+3. falta hacer el commit
+4. falta hacer el pull request
+5.
+
+Observaciones:
+* los hijos de footerInfo eran flex, por lo tanto, ocupaban todo el espacio disponible y no quedaba espacio para el justify-self
+* como tenian todo el espacio usado, usé justify-content para justificar los elementos hijos
+
+*/

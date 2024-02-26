@@ -1,0 +1,33 @@
+/* .cardsC{
+   display: flex;
+   gap: 12px;
+   margin-bottom: 16px;
+   flex-wrap: wrap;
+} */
+
+/* .cordsC > div{
+   max-width: 600px !important; 
+} */
+
+
+
+/* .cardsC > :not(:last-child) {
+   margin-bottom: 16px;
+} */
+
+
+
+.cardsC{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 12px;
+   margin-bottom: 16px;
+}
+
+@media(max-width: 800px){
+   .cardsC{
+      grid-template-columns: 1fr;
+   }
+}
+
+
