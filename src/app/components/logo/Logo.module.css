@@ -6,3 +6,8 @@
    text-decoration: none;
    color: white;
 }
+
+.logoImage{
+   object-fit: contain;
+   width: 40px;
+}

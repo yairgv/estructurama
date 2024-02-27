@@ -6,10 +6,10 @@ export const Logo = () => {
   return (
     
     <Link href="/" className={styles.logo}>
-      <Image
-         src={"/assets/images/logo_white.webp"}
-         width={32}
-         height={32}
+      <Image className={styles.logoImage}
+         src={"/assets/images/logo_white1.svg"}
+         width={54}
+         height={40}
          alt="Estructurama logo"
       />
       Estructurama
