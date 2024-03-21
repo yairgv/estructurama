@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import style from "./CardMini.module.css";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 export const CardMini = ({
   title = "NO TITLE",
@@ -12,6 +13,7 @@ export const CardMini = ({
 }) => {
 
   const imgRoute = `/assets/pro_images/${imgSrc}`;
+  const buttonRoute = `/proyecto/${linkId}`;
 
   return (
     <div className={style.card}>
@@ -31,9 +33,11 @@ export const CardMini = ({
             { location.charAt(0).toUpperCase() + location.slice(1).toLocaleLowerCase()}
           </p>
         </div>
-        <button className={style.cardInfoButton}>
-            <IoIosArrowForward />
-        </button>
+        <Link  href={buttonRoute}>
+          <button className={style.cardInfoButton}>
+              <IoIosArrowForward />
+          </button>
+        </Link>
       </div>
     </div>
   );

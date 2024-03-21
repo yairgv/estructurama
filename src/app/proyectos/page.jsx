@@ -17,6 +17,7 @@ export default function ProyectosPage() {
                   location = {project.location}
                   desc = {project.desc}
                   imgSrc = {project.pImage}
+                  linkId={project.id}
                 />
               )
           })

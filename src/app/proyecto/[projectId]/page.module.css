@@ -1,0 +1,52 @@
+.title{
+   font-size: 40px;
+   line-height: 1.2;
+}
+
+.subTitle{
+   font-size: 20px;
+   line-height: 1.4;
+}
+
+.title, .subTitle{
+   font-weight: bold;
+   color: #596478;
+}
+
+.infoContainer{
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+.info__img{
+   width: 65%;
+   object-fit: cover;
+}
+
+.info__detailsContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.details__locationContainer{
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+}
+
+.location__text{
+   width: 72px;
+   font-size: 12px;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.1;
+}
+
+.location__img{}
+
+.description{
+   font-family: Arial, Helvetica, sans-serif;
+}

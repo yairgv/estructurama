@@ -7,7 +7,7 @@ import { Links } from '../links/Links';
 export const Navbar = () => {
   return (
     <nav className={ style.navbar }>
-      <div className={`${style.navbarContent} contentWrapper`}>
+      <div className={`contentWrapper ${style.navbarContent}`}>
          <Logo/>
          <Links/>
       </div>
