@@ -20,7 +20,7 @@
 .cardsC{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 12px;
+   gap: 48px;
    margin-bottom: 16px;
 }
 

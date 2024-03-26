@@ -1,0 +1,13 @@
+
+
+.thumbnail{
+   height: 80px;
+   width: 100px;
+   width: fit-content;
+   background-color: black;
+   overflow: hidden;
+}
+
+.original{
+   background-color: rgba(0, 0, 0, 0.7);
+}

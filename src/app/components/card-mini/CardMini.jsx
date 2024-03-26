@@ -28,14 +28,14 @@ export const CardMini = ({
         <div className={style.cardTexts}>
           <h3 className={style.cardInfoTitle}>{title}</h3>
           <p className={style.cardInfoLocation}>
-            <FaMapMarkerAlt color="#4D84EF" className={style.cardInfoIcon} />
+            <FaMapMarkerAlt className={style.cardInfoIcon} />
             &nbsp;
             { location.charAt(0).toUpperCase() + location.slice(1).toLocaleLowerCase()}
           </p>
         </div>
         <Link  href={buttonRoute}>
           <button className={style.cardInfoButton}>
-              <IoIosArrowForward />
+              <IoIosArrowForward className={style.buttonArrow}/>
           </button>
         </Link>
       </div>

@@ -1,5 +1,5 @@
 .button{
-   background-color: #cb4496ff;
+   background-color: var(--secondaryColor);
    /* background-color: #4D84EF; */
    padding: 12px 32px;
    width: fit-content;
@@ -14,12 +14,12 @@
 }
 
 .button:hover{
-   background-color: hsl(220, 58%, 53%);
+   background-color: var(--secondaryColorHL)
    
 }
 
 .button:active{
    transform: translateY(1px);
-   background-color: hsl(220, 52%, 44%);
+   background-color: var(--secondaryColorPress)
 }
 

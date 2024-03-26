@@ -10,14 +10,14 @@
    align-items: center;
 }
 
-.footerInfo > * {
+/* .footerInfo > * {
    flex-grow: 1;
    flex-basis: 0;
-}
+} */
 
-.footerInfo > :nth-child(2){
+/* .footerInfo > :nth-child(2){
    justify-content: center;
-}
+} */
 
 .socialMedia {
    display: flex;

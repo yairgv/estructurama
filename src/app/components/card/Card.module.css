@@ -39,6 +39,7 @@
 }
 
 .cardInfoIcon{
+   color: var(--secondaryColor);
    transform: translateY(2px);
 }
 
@@ -69,4 +70,88 @@
 .cardInfoButton:hover{
    background-color: #202020;
 }
+
+.miniButton{
+   display: none;
+}
+
+.cardMiniButton{
+   background-color: #232323;
+   border: 1px solid #979797;
+   border-radius: 50%;
+   color: white;
+   font-size: 18px;
+   text-align: center;
+   height: 56px;
+   width: 56px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   transition: all;
+   transition-duration: 300ms;
+}
+
+.cardMiniButton:hover{
+   cursor: pointer;
+   background-color: #202020;
+}
+
+.buttonArrow{
+   transform: translateX(2px);
+}
+
+
+@media(max-width: 800px){
+   .card{
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      gap: 8px;
+   }
+
+   .cardImg{
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+   }
+   .cardInfo{
+      background-color: #202020;
+      color: white;
+      padding: 18px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4px;
+      height: 80px; 
+   }
+
+   .cardInfoDesc, .cardInfoButton{
+      display: none;
+   }
+
+   .card:nth-child(even){
+      grid-template-columns: 1fr;
+   }
+
+   .card:nth-child(even)> .cardImg{
+      order: 0;
+   }
+
+   .cardInfoTitle{
+      font-size: 18px;
+      font-weight: 500;
+   }
+
+   .cardInfoLocation{
+      font-size: 16px;
+   }
+
+   .miniButton{
+      display: inline-block;
+   }
+   
+} 
+
 

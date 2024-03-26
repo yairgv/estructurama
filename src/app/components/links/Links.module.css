@@ -53,6 +53,18 @@
    background-color: rgba(0, 0, 0, 0.4);
 }
 
+.hamLinks{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.closeButton{
+   color: rgba(255, 255, 255, 0.685);
+   font-size: 3rem;
+   margin-left: 12px;
+}
 
 
 

@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className={`${styles.footer}`}>
       <div className={`${styles.footerInfo} contentWrapper`}>
         <Logo />
-        <Links />
+        {/* <Links /> */}
         <div className={styles.socialMedia}><Redes/></div>
       </div>
     </footer>

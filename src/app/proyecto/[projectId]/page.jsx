@@ -2,6 +2,7 @@ import { Card } from "@/app/components/card/Card";
 import { getDataById } from "@/data/data"
 import styles from "./page.module.css";
 import Image from "next/image";
+import { Gallery } from "@/app/components/gallery/Gallery";
 
 export default function page ({params}){
 
@@ -12,6 +13,11 @@ export default function page ({params}){
 
    const imgRoute = `/assets/pro_images/${projectData.pImage}`;
    const mapRoute = `/assets/pro_images/map.jpg`;
+
+   const testPlanos = [
+      `/assets/pro_images/${projectData.pImage}`,
+      `/assets/pro_images/${projectData.pImage}`,
+   ]
 
    return(
       <div className="contentWrapper">
@@ -28,14 +34,13 @@ export default function page ({params}){
             />
 
             <div className={styles.info__detailsContainer}> 
-               
                <div className={styles.details__locationContainer}>
                   <p className={styles.location__text}>{projectData.location2}</p>
                   <Image
                      className={styles.location__img}
                      src={mapRoute}
                      width={145}
-                     height={274}
+                     height={250}
                      alt={`${projectData.title} picture`}
                   />
                </div>
@@ -45,12 +50,27 @@ export default function page ({params}){
             </div>
 
          </div>
-         <hr />
-         <h2>PLANOS</h2>
-         <hr />
-         <h2>FOTOS</h2>
-         <hr />
 
+
+         {
+            testPlanos.map((plano) => {
+                  return ( 
+                     <Image
+                        key={new Date().getTime}
+                        className={styles.plano}
+                        src={plano}
+                        width={825}
+                        height={497}
+                        alt={`plano picture`}
+                     />
+                  )
+            })
+         }
+
+
+         <Gallery
+            images={projectData.images}
+         />
 
 
       </div>

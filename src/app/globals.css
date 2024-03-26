@@ -6,8 +6,17 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primaryColor: #ffff;
+  --secondaryColor: #cb4496ff;
+  --secondaryColorHL: rgb(210, 93, 163);
+  --secondaryColorPress: rgb(190, 53, 135);
+}
+
+
+
 body{
-  background-color: white;
+  background-color: rgb(255, 250, 250);
   line-height: 1.7;
   background-image: url("/assets/bg.svg");
 }
